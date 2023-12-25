@@ -92,16 +92,16 @@ export default function SongCard({
           {(password.length === 0 || verify) && Details}
         </div>
       </div>
-      <Modal size={"sm"} isOpen={isOpen} onClose={onClose} placement="center">
+      <Modal size={"sm"} isOpen={isOpen} onClose={onClose} backdrop={"blur"} className="bg-black text-white">
         <ModalContent>
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1 items-center">
                 Wrong Password
               </ModalHeader>
-              <ModalBody>Please try again with correct password</ModalBody>
+              <ModalBody>Please try again with correct password!</ModalBody>
               <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+                <Button color="danger" variant="ghost" onPress={onClose}>
                   Close
                 </Button>
               </ModalFooter>
