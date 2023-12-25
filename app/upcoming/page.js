@@ -1,3 +1,12 @@
+import SongCard from "@/src/components/SongCard";
+import { details } from "@/public/details";
+
 export default function UpComing() {
-  return <h1>Upcoming Page</h1>;
+  return (
+    <div className="pb-24">
+      {details.map((item, index) => (
+        <SongCard {...item} key={index} />
+      ))}
+    </div>
+  );
 }
