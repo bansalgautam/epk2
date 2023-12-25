@@ -12,7 +12,7 @@ export default function AboutCard({
 }) {
   return (
     <div
-      className={`lg:flex mx-2 ${className} px-4 my-4 mb-24 lg:mb-8`}
+      className={`lg:flex mx-2 ${className} px-4 my-4 pb-24 lg:pb-8`}
     >
       <div
         className={`w-full lg:w-[350px] flex flex-col justify-center items-center min-h-[400px] `}

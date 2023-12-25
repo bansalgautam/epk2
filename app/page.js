@@ -25,7 +25,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="select-none text-white">
+    <div className="select-none text-white min-h-full">
       {data.map((item, index) => (
         <AboutCard {...item} key={index} />
       ))}
