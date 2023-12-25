@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function SongCard({
   id,
@@ -13,9 +12,11 @@ export default function SongCard({
   password,
   description,
   soundcloud,
+  lyrics,
 }) {
   const [pass, setPass] = useState("");
   const [verify, setVerify] = useState(false);
+  const [lyric, setLyric] = useState(false);
 
   const handleChange = (e) => {
     setPass(e.target.value);
@@ -26,10 +27,20 @@ export default function SongCard({
     setVerify(pass === password);
   };
 
+  const show = () => {
+    setLyric((prev) => !prev);
+  };
+
   const Details = (
-    <div>
+    <div className="select-none">
       <iframe width="100%" height="150" allow="autoplay" src={soundcloud} />
-      <Link href={`/upcoming/${id}`}>Visit Song Page</Link>
+      <div
+        onClick={show}
+        className="cursor-pointer bg-[#feac32] text-black px-2 py-1 border border-black my-4 inline-block hover:bg-[rgba(254,172,50,0.8)]"
+      >
+        {lyric ? "Hide Lyrics" : `Show Lyrics`}
+      </div>
+      {lyric && <pre>{lyrics}</pre>}
     </div>
   );
   return (
