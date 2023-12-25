@@ -4,16 +4,6 @@ export default function Home() {
   const data = [
     {
       src: "/image.jpg",
-      title: "DH1MAN MUSIC",
-      subtitle: "Producer / Beat Maker",
-      about:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed enim malesuada, feugiat urna sed, consequat ipsum. Donec tempus nibh ac aliquet porttitor. Quisque a orci bibendum, scelerisque quam in, lacinia mauris. Pellentesque ut metus ligula. Sed scelerisque a velit a egestas. Suspendisse mauris metus, semper ullamcorper dignissim ac, viverra vitae felis. Proin eget hendrerit sapien, et rhoncus massa. Sed pretium non arcu eu pellentesque. Ut vehicula nulla dolor, at ultricies tortor mollis et. In massa nibh, dignissim sed cursus ut, euismod a elit. Cras placerat lectus eget tortor imperdiet, quis laoreet diam interdum. Sed sed cursus quam.",
-      about2:
-        "Suspendisse bibendum condimentum felis, et volutpat turpis sollicitudin quis. Fusce eu tempor nulla. Cras a nunc sapien. Praesent gravida ante et mauris tempus, vel fermentum urna scelerisque. Praesent molestie condimentum nunc vel tristique. Maecenas elit dolor, luctus in dui sed, elementum tempus felis. Nullam posuere elementum ultricies. Morbi ante enim, vehicula eu iaculis eu, suscipit id purus. Proin sem purus, fermentum non venenatis sit amet, tincidunt a lacus. Fusce sodales lorem vitae sodales facilisis.",
-      className: "flex-row",
-    },
-    {
-      src: "/image.jpg",
       title: "SAKA",
       subtitle: "Singer / Lyricist",
       about:
@@ -22,10 +12,20 @@ export default function Home() {
         "Suspendisse bibendum condimentum felis, et volutpat turpis sollicitudin quis. Fusce eu tempor nulla. Cras a nunc sapien. Praesent gravida ante et mauris tempus, vel fermentum urna scelerisque. Praesent molestie condimentum nunc vel tristique. Maecenas elit dolor, luctus in dui sed, elementum tempus felis. Nullam posuere elementum ultricies. Morbi ante enim, vehicula eu iaculis eu, suscipit id purus. Proin sem purus, fermentum non venenatis sit amet, tincidunt a lacus. Fusce sodales lorem vitae sodales facilisis.",
       className: "flex-row-reverse",
     },
+    {
+      src: "/image.jpg",
+      title: "DH1MAN MUSIC",
+      subtitle: "Producer / Beat Maker",
+      about:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed enim malesuada, feugiat urna sed, consequat ipsum. Donec tempus nibh ac aliquet porttitor. Quisque a orci bibendum, scelerisque quam in, lacinia mauris. Pellentesque ut metus ligula. Sed scelerisque a velit a egestas. Suspendisse mauris metus, semper ullamcorper dignissim ac, viverra vitae felis. Proin eget hendrerit sapien, et rhoncus massa. Sed pretium non arcu eu pellentesque. Ut vehicula nulla dolor, at ultricies tortor mollis et. In massa nibh, dignissim sed cursus ut, euismod a elit. Cras placerat lectus eget tortor imperdiet, quis laoreet diam interdum. Sed sed cursus quam.",
+      about2:
+        "Suspendisse bibendum condimentum felis, et volutpat turpis sollicitudin quis. Fusce eu tempor nulla. Cras a nunc sapien. Praesent gravida ante et mauris tempus, vel fermentum urna scelerisque. Praesent molestie condimentum nunc vel tristique. Maecenas elit dolor, luctus in dui sed, elementum tempus felis. Nullam posuere elementum ultricies. Morbi ante enim, vehicula eu iaculis eu, suscipit id purus. Proin sem purus, fermentum non venenatis sit amet, tincidunt a lacus. Fusce sodales lorem vitae sodales facilisis.",
+      className: "flex-row",
+    },
   ];
 
   return (
-    <div className="select-none">
+    <div className="select-none text-white">
       {data.map((item, index) => (
         <AboutCard {...item} key={index} />
       ))}
