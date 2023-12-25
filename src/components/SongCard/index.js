@@ -13,7 +13,6 @@ import {
 } from "@nextui-org/react";
 
 export default function SongCard({
-  id,
   name,
   singer,
   album,
@@ -60,7 +59,7 @@ export default function SongCard({
 
   return (
     <>
-      <div className="w-[90%] border border-white mx-auto p-2 m-2 flex text-white gap-4 lg:flex-row flex-col items-center lg:items-start">
+      <div className="w-[90%] shadow-2xl mx-auto p-2 m-8 flex text-white gap-4 lg:flex-row flex-col items-center lg:items-start bg-[#0a0a23]">
         <Image
           src={src}
           height={250}
@@ -92,7 +91,13 @@ export default function SongCard({
           {(password.length === 0 || verify) && Details}
         </div>
       </div>
-      <Modal size={"sm"} isOpen={isOpen} onClose={onClose} backdrop={"blur"} className="bg-black text-white">
+      <Modal
+        size={"sm"}
+        isOpen={isOpen}
+        onClose={onClose}
+        backdrop={"blur"}
+        className="bg-black text-white"
+      >
         <ModalContent>
           {(onClose) => (
             <>
