@@ -38,17 +38,19 @@ export default function AboutCard({
           <p>{about} </p>
           <p>{about2}</p>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="gap-4 flex items-center flex-col lg:flex-row">
           <div className="text-xl font-semibold">Social Handles: </div>
-          <Link href={facebook} target="_blank">
-            <FaFacebookF className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
-          </Link>
-          <Link href={instagram} target="_blank">
-            <FaInstagram className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
-          </Link>
-          <Link href={twitter} target="_blank">
-            <FaXTwitter className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
-          </Link>
+          <div className="flex gap-2">
+            <Link href={facebook} target="_blank">
+              <FaFacebookF className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
+            </Link>
+            <Link href={instagram} target="_blank">
+              <FaInstagram className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
+            </Link>
+            <Link href={twitter} target="_blank">
+              <FaXTwitter className="w-[30px] h-auto hover:opacity-60 cursor-pointer" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
