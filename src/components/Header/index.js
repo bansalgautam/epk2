@@ -7,7 +7,7 @@ export default function Header() {
   const pathName = usePathname();
 
   return (
-    <div className="text-white bg-[#0a0a23] border-b-2 px-4">
+    <div className="text-white bg-[#0a0a23] border-b-2 px-4 select-none">
       <h1 className="text-center text-5xl font-bold pt-4">LOGO</h1>
       <nav className="flex flex-col lg:flex-row justify-around py-4 gap-4">
         <div

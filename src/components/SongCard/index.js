@@ -97,6 +97,7 @@ export default function SongCard({
         onClose={onClose}
         backdrop={"blur"}
         className="bg-black text-white"
+        placement="center"
       >
         <ModalContent>
           {(onClose) => (

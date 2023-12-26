@@ -11,9 +11,13 @@ export default function Home() {
       about2:
         "Suspendisse bibendum condimentum felis, et volutpat turpis sollicitudin quis. Fusce eu tempor nulla. Cras a nunc sapien. Praesent gravida ante et mauris tempus, vel fermentum urna scelerisque. Praesent molestie condimentum nunc vel tristique. Maecenas elit dolor, luctus in dui sed, elementum tempus felis. Nullam posuere elementum ultricies. Morbi ante enim, vehicula eu iaculis eu, suscipit id purus. Proin sem purus, fermentum non venenatis sit amet, tincidunt a lacus. Fusce sodales lorem vitae sodales facilisis.",
       className: "flex-row-reverse",
+      facebook:
+        "",
+      instagram: "",
+      twitter: "",
     },
     {
-      src: "/image.jpg",
+      src: "/D.jpg",
       title: "DH1MAN MUSIC",
       subtitle: "Producer / Beat Maker",
       about:
@@ -21,6 +25,10 @@ export default function Home() {
       about2:
         "Suspendisse bibendum condimentum felis, et volutpat turpis sollicitudin quis. Fusce eu tempor nulla. Cras a nunc sapien. Praesent gravida ante et mauris tempus, vel fermentum urna scelerisque. Praesent molestie condimentum nunc vel tristique. Maecenas elit dolor, luctus in dui sed, elementum tempus felis. Nullam posuere elementum ultricies. Morbi ante enim, vehicula eu iaculis eu, suscipit id purus. Proin sem purus, fermentum non venenatis sit amet, tincidunt a lacus. Fusce sodales lorem vitae sodales facilisis.",
       className: "flex-row",
+      facebook:
+        "https://www.facebook.com/profile.php?id=100092288401004&mibextid=2JQ9oc",
+      instagram: "https://www.instagram.com/dh1manmusic",
+      twitter: "https://x.com/DH1MANMUSIC?t=iSTJHeqa9-mflMNB78RAEA&s=09",
     },
   ];
 
