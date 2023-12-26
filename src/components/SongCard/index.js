@@ -46,14 +46,14 @@ export default function SongCard({
 
   const Details = (
     <div className="select-none">
-      <iframe width="100%" height="150" allow="autoplay" src={soundcloud} />
+      <iframe height="150" allow="autoplay" className="mx-auto lg:max-w-[95%] w-[100%]" src={soundcloud} />
       <div
         onClick={show}
         className="cursor-pointer bg-[#feac32] text-black px-2 py-1 my-4 inline-block hover:bg-[rgba(254,172,50,0.8)]"
       >
         {lyric ? "Hide Lyrics" : `Show Lyrics`}
       </div>
-      {lyric && <pre>{lyrics}</pre>}
+      {lyric && <pre className="text-wrap">{lyrics}</pre>}
     </div>
   );
 
